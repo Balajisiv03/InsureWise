@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+// import lifeinsurance from "../../assets/transportinsurance.jpg";
 
 const faqData = [
   {
@@ -95,27 +98,12 @@ const LifeInsurance = () => {
         <p className="mb-4">
           Fill out the form below to get started with our life insurance plan.
         </p>
-        <form className="mt-4">
-          <div className="mb-4">
-            <label className="block text-gray-700">Name</label>
-            <input type="text" className="w-full p-2 border rounded" />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
-            <input type="email" className="w-full p-2 border rounded" />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Phone</label>
-            <input type="text" className="w-full p-2 border rounded" />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Coverage Amount</label>
-            <input type="text" className="w-full p-2 border rounded" />
-          </div>
-          <button type="submit" className="bg-blue-600 text-white p-2 rounded">
+
+        <Link to="/lifeform">
+          <button className="bg-blue-600 text-white p-2 rounded mt-4">
             Book Insurance
           </button>
-        </form>
+        </Link>
       </section>
     </div>
   );

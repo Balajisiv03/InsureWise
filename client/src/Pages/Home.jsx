@@ -32,9 +32,9 @@ function HomePage() {
 
         <section id="plans" className="mb-6">
           <h2 className="text-xl font-bold mb-4">Our Insurance Plans</h2>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4 ">
             <Link to="/lifeinsurance">
-              <div className="bg-white shadow-md rounded-lg p-4 hover:border-blue-500 border">
+              <div className="bg-white shadow-md rounded-lg p-4 hover:shadow-lg  hover:border-blue-500 border">
                 <h3 className="text-lg font-bold">Life Insurance</h3>
                 <p className="mt-2">
                   Protect your family future with our life insurance plans.
@@ -133,7 +133,7 @@ function HomePage() {
               Chennai, Tamil Nadu, 600045
             </p>
             <p className="mt-2">
-              Email: info@myinsurance.com
+              Email: info@InsureWise.com
               <br />
               Phone: 5453964756
             </p>
@@ -154,11 +154,6 @@ function HomePage() {
               <li className="mt-2">
                 <a href="#about" className="hover:underline">
                   About
-                </a>
-              </li>
-              <li className="mt-2">
-                <a href="#contact" className="hover:underline">
-                  Contact
                 </a>
               </li>
             </ul>

@@ -9,6 +9,11 @@ import VehicleInsurance from "./Pages/Insurance/VehicleInsurance";
 import HomeInsurance from "./Pages/Insurance/HomeInsurance";
 import HealthInsurance from "./Pages/Insurance/HealthInsurance";
 
+import VehicleForm from "./Pages/Insuranceform/VehicleForm";
+import HomeForm from "./Pages/Insuranceform/HomeForm";
+import HealthForm from "./Pages/Insuranceform/HealthForm";
+import LifeForm from "./Pages/Insuranceform/LifeForm";
+
 function App() {
   return (
     <>
@@ -23,6 +28,10 @@ function App() {
           <Route path="/vehicleinsurance" element={<VehicleInsurance />} />
           <Route path="/homeinsurance" element={<HomeInsurance />} />
           <Route path="/healthinsurance" element={<HealthInsurance />} />
+          <Route path="/vehicleform" element={<VehicleForm />} />
+          <Route path="/homeform" element={<HomeForm />} />
+          <Route path="/healthform" element={<HealthForm />} />
+          <Route path="/lifeform" element={<LifeForm />} />
         </Routes>
       </BrowserRouter>
     </>

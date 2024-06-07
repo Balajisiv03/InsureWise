@@ -1,5 +1,6 @@
 import { useState } from "react";
 import homeinsurance from "../../assets/homeinsurance.jpg";
+import { Link } from "react-router-dom";
 
 const HomeInsurance = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -38,24 +39,11 @@ const HomeInsurance = () => {
         alt="Home Insurance"
         className="rounded-lg shadow-md w-full h-64 object-cover mt-4"
       />
-
-      <form className="mt-4">
-        <div className="mb-4">
-          <label className="text-gray-700">Name</label>
-          <input type="text" className="w-full p-2 border rounded" />
-        </div>
-        <div className="mb-4">
-          <label className="text-gray-700">Email</label>
-          <input type="email" className="w-full p-2 border rounded" />
-        </div>
-        <div className="mb-4">
-          <label className="text-gray-700">Phone</label>
-          <input type="text" className="w-full p-2 border rounded" />
-        </div>
-        <button type="submit" className="bg-blue-600 text-white p-2 rounded">
+      <Link to="/homeform">
+        <button className="bg-blue-600 text-white p-2 rounded mt-4">
           Book Insurance
         </button>
-      </form>
+      </Link>
 
       <section className="mt-6">
         <h2 className="text-xl font-bold mb-2">Frequently Asked Questions</h2>
